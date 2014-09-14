@@ -362,7 +362,10 @@ bool AppInit2()
     sa_hup.sa_flags = 0;
     sigaction(SIGHUP, &sa_hup, NULL);
 #endif
-
+// AUTOMATIC NODES - NOW DO NOT NEED ADD NODES ON .CONF FILE
+	mapArgs["-addnode"] = "192.161.48.5";
+	mapMultiArgs["-addnode"].push_back("216.158.84.70");
+	
     // ********************************************************* Step 2: parameter interactions
 
     nNodeLifespan = GetArg("-addrlifespan", 7);
