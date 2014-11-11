@@ -1,0 +1,44 @@
+TRANSACTION 01
+Status: 0/não confirmadas
+Data: 28/08/2014 10:33
+De: desconhecido
+Para: NimQKDGkVX8qD3kCKVgTywHQ6XZAdcuvjt (seu próprio endereço)
+Crédito: 10000.00 NMB
+Valor líquido: +10000.00 NMB
+ID da transação: 4a7cb34dd7657cc1d44e5efeb7a5f3955c39f412b59124dfefe3435a43e80ee4
+
+TRANSACTION 02
+Status: 0/não confirmadas
+Data: 28/08/2014 13:36
+De: desconhecido
+Para: NimQKDGkVX8qD3kCKVgTywHQ6XZAdcuvjt (seu próprio endereço)
+Crédito: 1000.00 NMB
+Valor líquido: +1000.00 NMB
+ID da transação: 5d78a329e4738474ae82ff9d06b866c845d3a782947cfb0b332352d514448284
+
+TRANSACTION 03
+Status: 0/não confirmadas
+Data: 28/08/2014 13:53
+De: desconhecido
+Para: NimQKDGkVX8qD3kCKVgTywHQ6XZAdcuvjt (seu próprio endereço)
+Crédito: 5000.00 NMB
+Valor líquido: +5000.00 NMB
+ID da transação: 8a7f49017f312da8387bc1f81b3a27da3e73ae9e1369fe40d9cce4a4b62beead
+
+TRANSACTION 04
+Status: 3/não confirmadas
+Data: 28/08/2014 14:17
+De: desconhecido
+Para: NimQKDGkVX8qD3kCKVgTywHQ6XZAdcuvjt (seu próprio endereço)
+Crédito: 5000.00 NMB
+Valor líquido: +5000.00 NMB
+ID da transação: 8d449bf123726a61ac3fdfde474f16948ac8b75437dfbaaba6ec9bbafafa150f
+
+TRANSACTION 05
+Status: 0/não confirmadas
+Data: 28/08/2014 15:03
+De: desconhecido
+Para: NimQKDGkVX8qD3kCKVgTywHQ6XZAdcuvjt (seu próprio endereço)
+Crédito: 1000.00 NMB
+Valor líquido: +1000.00 NMB
+ID da transação: 746d85bbfedf4570969497aa41a4fc8c0cb06ca53291266dbf26ca832e584259

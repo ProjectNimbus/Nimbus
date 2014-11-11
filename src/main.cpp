@@ -40,7 +40,7 @@ CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
 unsigned int nTargetSpacing = 1 * 60; // 60 seconds
 unsigned int nStakeMinAge = 60 * 60 * 24 * 1; // 24 hour
-unsigned int nStakeMaxAge = -1;           //unlimited
+unsigned int nStakeMaxAge = 60 * 60 * 24 * 7; // 7 days
 unsigned int nModifierInterval = 2 * 60; // time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 50;
@@ -2822,7 +2822,11 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
         CAddress addrFrom;
         uint64_t nNonce = 1;
         vRecv >> pfrom->nVersion >> pfrom->nServices >> nTime >> addrMe;
-        if (pfrom->nVersion < MIN_PROTO_VERSION)
+        bool badVersion = false;
+        if (pfrom->nVersion < FORK)
+			badVersion = true;
+		       	
+       if (badVersion)
         {
             // Since February 20, 2012, the protocol is initiated at version 209,
             // and earlier versions are no longer supported

@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QSystemTrayIcon>
 
+#include "util.h" // for uint64
+
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
@@ -14,6 +16,10 @@ class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
+class ChatWindow;
+class PoolBrowser;
+class BlockBrowser;
+
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -65,7 +71,11 @@ private:
     AddressBookPage *receiveCoinsPage;
     SendCoinsDialog *sendCoinsPage;
     SignVerifyMessageDialog *signVerifyMessageDialog;
-
+	
+	ChatWindow *chatWindow;
+	PoolBrowser *poolBrowser;
+	BlockBrowser *blockBrowser;
+	
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
     QLabel *labelConnectionsIcon;
@@ -75,7 +85,10 @@ private:
 
     QMenuBar *appMenuBar;
     QAction *overviewAction;
-    QAction *historyAction;
+	QAction *chatAction;
+	QAction *poolAction;
+	QAction *blockAction;
+	QAction *historyAction;
     QAction *quitAction;
     QAction *sendCoinsAction;
     QAction *addressBookAction;
@@ -145,6 +158,15 @@ private slots:
     void gotoReceiveCoinsPage();
     /** Switch to send coins page */
     void gotoSendCoinsPage();
+	
+	/** Switch to chat window*/
+	void gotoChatPage();
+	
+	/** Switch to Market window*/
+	void gotoPoolBrowser();
+	
+	/** Switch to Block window*/
+	void gotoBlockBrowser();
 
     /** Show Sign/Verify Message dialog and switch to sign message tab */
     void gotoSignMessageTab(QString addr = "");

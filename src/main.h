@@ -26,7 +26,8 @@ class CInv;
 class CRequestTracker;
 class CNode;
 
-static const int LAST_POW_BLOCK = 250100;
+//after harfork the supply was reduced to only 14M coins
+static const int LAST_POW_BLOCK = 141000;
 
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
@@ -38,7 +39,7 @@ static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 25000100 * COIN;
 static const int64_t COIN_YEAR_REWARD = 2 * CENT; // 2% per year
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.02 * COIN;	// 2% annual interest
-static const int MODIFIER_INTERVAL_SWITCH = 250100;
+static const int MODIFIER_INTERVAL_SWITCH = 135000;
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
@@ -55,6 +56,10 @@ static const uint256 hash1000Block("0x00000000069ff0e9d92b73bb54f21da010b32d44ef
 static const uint256 hash10000Block("0x000000000c7051a45929a8e77dc2a59d17c5c68948cc020b6da78ab545dc2c5c");
 static const uint256 hash20000Block("0x000000003268f5eacdf081560ccbf399f7e79ddb89dc45848a673cb8f848c29b");
 static const uint256 hash40000Block("0x00000000024e1b0d1456f2300aa02abeedef89712303bfe5f4c910f85c9ec271");
+static const uint256 hash133286Block("0x000000001f336f13441d178f2c0d22d1828f5f97520755595e9da834ac438ab7");
+static const uint256 hash139850Block("0x0000000012d0c26e0c82ab630b8175c64a67b13d7d163269edef0f18db322029"); 
+
+
 
 
 static const uint256 hashGenesisBlockTestNet("0x");
