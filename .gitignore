@@ -1,5 +1,6 @@
 *.tar.gz
-
+release/
+debug/
 *.exe
 src/nimbuscoin-cli
 src/nimbuscoin-tx
