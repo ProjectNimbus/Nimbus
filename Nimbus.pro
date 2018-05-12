@@ -14,13 +14,13 @@ greaterThan(QT_MAJOR_VERSION, 4) {
     DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0
 }
 
-BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
-BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
-BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+BOOST_LIB_SUFFIX=-mgw49-mt-s-1_57
+BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
+BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
 BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1i/include
-OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1i
+OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1l/include
+OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1l
 MINIUPNPC_INCLUDE_PATH=C:/deps
 LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.12
 LIBPNG_LIB_PATH=C:/deps/libpng-1.6.12/.libs
@@ -85,7 +85,7 @@ contains(USE_UPNP, -) {
     count(USE_UPNP, 0) {
         USE_UPNP=1
     }
-    DEFINES += USE_UPNP=$$USE_UPNP STATICLIB
+    DEFINES += USE_UPNP=$$USE_UPNP DMINIUPNP_STATICLIB
     INCLUDEPATH += $$MINIUPNPC_INCLUDE_PATH
     LIBS += $$join(MINIUPNPC_LIB_PATH,,-L,) -lminiupnpc
     win32:LIBS += -liphlpapi
@@ -263,7 +263,6 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/rpcconsole.h \
     src/version.h \
     src/netbase.h \
-	src/qt/poolbrowser.h \
 	src/qt/chatwindow.h \
 	src/qt/serveur.h \
 	src/qt/qcustomplot.h \
@@ -353,7 +352,6 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/protocol.cpp \
     src/qt/notificator.cpp \
     src/qt/qtipcserver.cpp \
-	src/qt/poolbrowser.cpp \
 	src/qt/serveur.cpp \
 	src/qt/qcustomplot.cpp \
     src/qt/rpcconsole.cpp \
@@ -372,7 +370,6 @@ RESOURCES += \
 FORMS += \
     src/qt/forms/coincontroldialog.ui \
 	src/qt/forms/chatwindow.ui \
-	src/qt/forms/poolbrowser.ui \
 	src/qt/forms/blockbrowser.ui \
     src/qt/forms/sendcoinsdialog.ui \
     src/qt/forms/addressbookpage.ui \

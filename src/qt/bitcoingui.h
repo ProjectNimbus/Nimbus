@@ -17,7 +17,6 @@ class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
 class ChatWindow;
-class PoolBrowser;
 class BlockBrowser;
 
 
@@ -73,7 +72,6 @@ private:
     SignVerifyMessageDialog *signVerifyMessageDialog;
 	
 	ChatWindow *chatWindow;
-	PoolBrowser *poolBrowser;
 	BlockBrowser *blockBrowser;
 	
     QLabel *labelEncryptionIcon;
@@ -162,8 +160,7 @@ private slots:
 	/** Switch to chat window*/
 	void gotoChatPage();
 	
-	/** Switch to Market window*/
-	void gotoPoolBrowser();
+
 	
 	/** Switch to Block window*/
 	void gotoBlockBrowser();

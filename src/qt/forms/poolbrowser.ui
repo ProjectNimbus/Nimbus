@@ -116,11 +116,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
        <property name="usesScrollButtons">
         <bool>true</bool>
        </property>
-       <widget class="QWidget" name="qWidgetBittrexMarketData">
-        <property name="styleSheet">
-         <string notr="true">border:none;</string>
-        </property>
-        <attribute name="icon">
+       <attribute name="icon">
          <iconset resource="../bitcoin.qrc">
           <normaloff>:/icons/res/icons/main.png</normaloff>:/icons/res/icons/main.png</iconset>
         </attribute>
@@ -1053,16 +1049,7 @@ QTabBar::tab:last {margin-right:100px;}</string>
        <height>43</height>
       </size>
      </property>
-     <widget class="QPushButton" name="btnUpdateMarketData">
-      <property name="geometry">
-       <rect>
-        <x>520</x>
-        <y>0</y>
-        <width>191</width>
-        <height>41</height>
-       </rect>
-      </property>
-      <property name="sizePolicy">
+     <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
