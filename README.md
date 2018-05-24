@@ -16,6 +16,8 @@ Max PoW Coins: ~25,000,100 NMB
 PoS Starts on Block 25000100
 PoS 2% Annual Interest
 
+Max PoW Coin after the hard fork: 14,000,100
+
 Development process
 ===========================
 
